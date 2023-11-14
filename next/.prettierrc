@@ -1,1 +1,1 @@
-{ "semi": false, "useTabs": false, "singleQuote": true }
+{ "semi": false, "useTabs": false, "singleQuote": true, "endOfLine": "auto" }
