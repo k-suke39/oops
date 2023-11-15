@@ -1,7 +1,6 @@
+import axios from 'axios'
 import type { NextPage } from 'next'
 import useSWR from 'swr'
-
-import axios from 'axios'
 
 const Index: NextPage = () => {
   const url = 'http://localhost:3000/api/v1/health_check'
