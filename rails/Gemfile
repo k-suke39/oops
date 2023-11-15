@@ -24,7 +24,6 @@ gem "rack-cors"
 # 環境毎の設定管理を行う
 gem "config"
 
-
 group :development, :test do
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
