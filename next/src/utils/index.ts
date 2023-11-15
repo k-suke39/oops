@@ -1,11 +1,8 @@
-import axios, { AxiosResponse, AxiosError } from 'axios'
+import axios from 'axios'
 
 export const fetcher = (url: string) => {
-  axios
-    .get(url)
-    .then((res: AxiosResponse) => res.data)
-    .catch((err: AxiosError) => {
-      console.log(err.message)
-      throw err
-    })
+  axios.get(url).then((res) => {
+    console.log('data', res.data)
+    res
+  })
 }
