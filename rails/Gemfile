@@ -36,6 +36,9 @@ gem "devise_token_auth"
 # レスポンスJSONを制御する
 gem "active_model_serializers"
 
+# メッセージを日本語化
+gem "rails-i18n"
+
 group :development, :test do
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
