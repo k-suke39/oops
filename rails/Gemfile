@@ -24,6 +24,18 @@ gem "rack-cors"
 # 環境毎の設定管理を行う
 gem "config"
 
+# ユーザー認証を提供する
+gem "devise"
+
+# devise を日本語化する
+gem "devise-i18n"
+
+# ユーザーのトークン認証を提供する
+gem "devise_token_auth"
+
+# レスポンスJSONを制御する
+gem "active_model_serializers"
+
 group :development, :test do
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
@@ -37,4 +49,11 @@ group :development, :test do
   gem "rubocop-faker"
   gem "rubocop-rails"
   gem "rubocop-rspec"
+
+  # 開発環境でメール送信をテストする
+  gem "letter_opener_web"
+
+  # テスト用データを作成する
+  gem "factory_bot_rails"
+  gem "faker"
 end
