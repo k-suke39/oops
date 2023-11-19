@@ -42,6 +42,9 @@ gem "rails-i18n"
 # ページネーション機能を提供する
 gem "kaminari"
 
+# enum を日本語化する
+gem "enum_help"
+
 group :development, :test do
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
