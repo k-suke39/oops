@@ -39,6 +39,9 @@ gem "active_model_serializers"
 # メッセージを日本語化
 gem "rails-i18n"
 
+# ページネーション機能を提供する
+gem "kaminari"
+
 group :development, :test do
   # pry コンソールを使えるようにする。
   gem "pry-byebug"
@@ -59,4 +62,7 @@ group :development, :test do
   # テスト用データを作成する
   gem "factory_bot_rails"
   gem "faker"
+
+  # N+1発生時にアラートを表示する
+  gem "bullet"
 end
